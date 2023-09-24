@@ -24,7 +24,7 @@ jobs:
     needs: release-docker-image-job
     runs-on: ubuntu-latest
     env:
-      CONTAINER_NAME: 'somchai-vue-app'
+      CONTAINER_NAME: 'akenrin-vue-app'
       DOCKER_IMAGE_URL: 'ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:${{  github.ref_name }}'
     steps:
       - name: executing remote ssh commands using password
