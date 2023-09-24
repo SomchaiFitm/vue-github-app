@@ -21,3 +21,8 @@ jobs:
       - name: run  build production( create dist floder)
         run: npm run build
     
+      - name: Upload dist
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-production
+          path: dist
